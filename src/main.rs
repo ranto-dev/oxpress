@@ -40,7 +40,7 @@ fn main() -> Result<()> {
         Commands::Decompress { input, output } => {
             decompressor::decompress_file(&input, &output)?;
         }
-    }
+    }   
 
     Ok(())
 }
