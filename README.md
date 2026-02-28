@@ -31,7 +31,7 @@ Il implémente une architecture hybride combinant :
 
 #### décompression
 
-<img src="./docs/demo/compress.png" width="100%" />
+<img src="./docs/demo/decompress.png" width="100%" />
 
 #### Testing and verification
 
@@ -134,4 +134,4 @@ Cela rend l’outil robuste même pour de gros fichiers.
 
 - Code source complet sur [ce repositorie](https://github.com/ranto-dev/LeaveFlow.git)
 - Documentation pour l'utilisation de cette outil dans le fichier [`docs/comment ça marche.md`](./docs/comment%20ça%20marche.md)
-- Explication de l'architecture et rapport sur le pojet: [`docs/FAQ.md`](./docs/FAQ.md)
+- Explication de l'architecture et rapport sur le projet: [`docs/FAQ.md`](./docs/FAQ.md)
