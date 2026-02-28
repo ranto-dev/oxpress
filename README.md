@@ -23,6 +23,12 @@ Il implémente une architecture hybride combinant :
 - Une CLI moderne basée sur `clap`
 - Sécurité mémoire garantie par Rust
 
+## Documentation
+
+- Code source complet sur [ce repositorie](https://github.com/ranto-dev/LeaveFlow.git)
+- Documentation pour l'utilisation de cet outil: [`docs/comment ça marche.md`](./docs/comment%20ça%20marche.md)
+- Explication et rapport technique sur le projet: [`docs/FAQ.md`](./docs/FAQ.md)
+
 ## Features Demo
 
 #### Compression
@@ -129,9 +135,3 @@ Cela rend l’outil robuste même pour de gros fichiers.
 - **clap** pour le cli
 - **bincode** pour le encoding binaire
 - **colored** et **figlet-rs** pour le superbe UI experience
-
-### Livrable
-
-- Code source complet sur [ce repositorie](https://github.com/ranto-dev/LeaveFlow.git)
-- Documentation pour l'utilisation de cette outil dans le fichier [`docs/comment ça marche.md`](./docs/comment%20ça%20marche.md)
-- Explication de l'architecture et rapport sur le projet: [`docs/FAQ.md`](./docs/FAQ.md)
