@@ -42,12 +42,21 @@ Dans le répertoire **release**, vous trouverez un fichier executable nommé [**
 
 # pour restaurer et décompresser un fichier texte depuis un fichier *.oxp
 ./oxpress decompress <input.oxp> <output.txt>
+
+# pour tester la conformité entre le fichier texte primaire et le fichier apres décompression
+sha256sum <primary.txt> <decompressed.txt> # les deux hash doivent etre identique
 ```
 
 ### 4. Demo
 
-#### help
-
 #### Compression
 
+<img src="./demo/compress.png" width="100%" />
+
 #### décompression
+
+<img src="./demo/compress.png" width="100%" />
+
+#### Testing and verification
+
+<img src="./demo/verify.png" width="100%" />

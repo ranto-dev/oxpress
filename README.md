@@ -1,31 +1,45 @@
+![header](./docs/demo/banner.png)
+
 # 🦀 Oxpress
 
-![Rust](https://img.shields.io/badge/Rust-1.93%2B-orange)
-![CLI](https://img.shields.io/badge/Interface-CLI-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
+<div align="center">
 
-**Oxpress** est un compresseur sans perte (lossless) écrit en **Rust**.
+  <img src="https://img.shields.io/badge/Rust-1.93%2B-orange" alt="Rust"/>
+  <img src="https://img.shields.io/badge/Interface-CLI-blue" alt="CLI" />
+  <img src="https://img.shields.io/badge/License-MIT-green" alt="License" />
+
+  <br>
+
+  <p>
+    <b>Oxpress</b> est un compresseur sans perte (lossless) écrit en Rust
+  </p>
+
+</div>
+
 Il implémente une architecture hybride combinant :
 
-- **LZ77 (Sliding Window)** pour détecter les répétitions
-- **Huffman Coding** pour réduire l’entropie
+- **LZ77** pour détecter les répétitions
+- **Huffman** pour réduire l’entropie
 - Une CLI moderne basée sur `clap`
 - Sécurité mémoire garantie par Rust
 
-## I. Objectifs du projet
+## Features Demo
 
-Une application simple et fonctionnelle permettant aux utilisateur de compresser et de décompresser des données textes.
+#### Compression
 
-Oxpress démontre :
+<img src="./docs/demo/compress.png" width="100%" />
 
-- L’implémentation complète d’un pipeline de compression
-- L’utilisation de structures de données performantes en Rust
-- Une architecture modulaire et extensible
-- Un outil CLI propre et utilisable en production académique et aussi en usage personnelle
+#### décompression
 
-## II. Fonctionnalités disponibles
+<img src="./docs/demo/compress.png" width="100%" />
 
-### Pipeline de compression
+#### Testing and verification
+
+<img src="./docs/demo/verify.png" width="100%" />
+
+## Fonctionnalités disponibles
+
+#### Pipeline de compression
 
 ```
 
@@ -41,7 +55,7 @@ Oxpress démontre :
 
 ```
 
-### LZ77 — Sliding Window
+#### LZ77 — Sliding Window
 
 LZ77 détecte les répétitions dans une **fenêtre glissante (sliding window)**.
 
@@ -67,7 +81,7 @@ _Chaque token représente_ :
 
 Cette étape réduit les redondances structurelles.
 
-### Huffman — Encodage Entropique
+#### Huffman — Encodage Entropique
 
 **Après LZ77**:
 
@@ -83,13 +97,13 @@ _Structures utilisées_ :
 - `Vec<bool>` : représentation temporaire des bits
 - Sérialisation via `bincode`
 
-### La décompression :
+#### La décompression :
 
 1. L’arbre de Huffman est reconstruit à partir des données stockées dans le header
 2. Le flux est décodé
 3. Les tokens LZ77 sont restaurés
 
-### Sécurité Mémoire
+#### Sécurité Mémoire
 
 Oxpress bénéficie des garanties de Rust :
 
@@ -101,24 +115,22 @@ Oxpress bénéficie des garanties de Rust :
 
 Cela rend l’outil robuste même pour de gros fichiers.
 
-## III. Fonctionnalités a venir
+## Fonctionnalités à venir
 
 - [ ] Optimisation recherche LZ77 (table de hachage)
-- [ ] Implémentation LZSS
 - [ ] Multi-threading avec `rayon`
 - [ ] Streaming compression (fichiers > 1GB)
 - [ ] Format binaire custom avec magic header
-- [ ] Benchmarks automatisés (`criterion`)
 - [ ] Support de différents niveaux de compression
 
-## IV. Stack
+## Stack
 
 - **Rust** comme langage de programmation
 - **clap** pour le cli
 - **bincode** pour le encoding binaire
 - **colored** et **figlet-rs** pour le superbe UI experience
 
-### V. Livrable
+### Livrable
 
 - Code source complet sur [ce repositorie](https://github.com/ranto-dev/LeaveFlow.git)
 - Documentation pour l'utilisation de cette outil dans le fichier [`docs/comment ça marche.md`](./docs/comment%20ça%20marche.md)
