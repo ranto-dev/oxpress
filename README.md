@@ -27,7 +27,7 @@ Il implémente une architecture hybride combinant :
 
 - Code source complet sur [ce repositorie](https://github.com/ranto-dev/LeaveFlow.git)
 - Documentation pour l'utilisation de cet outil: [docs/comment ça marche.md](./docs/comment%20ça%20marche.md)
-- Explication et rapport technique sur le projet: [docs/FAQ.md](./docs/rapport%20technique.pdf)
+- Explication et rapport technique sur le projet: [docs/rapport technique.pdf](./docs/rapport%20technique.pdf)
 
 ## Features Demo
 
