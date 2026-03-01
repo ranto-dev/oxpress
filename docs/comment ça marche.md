@@ -49,7 +49,7 @@ Dans le répertoire **release**, vous trouverez un fichier executable nommé [**
 sha256sum <primary.txt> <decompressed.txt> # les deux hash doivent etre identique
 ```
 
-Si on veut tester directement le projet avec `cargo` et rebuild ou lancer le projet en mode debug alors il est primordiale d'i**nstaller rust** sur votre machine.
+Si on veut tester directement le projet avec `cargo` et rebuild ou lancer le projet en mode debug alors il est primordiale d'[**installer rust**](https://rust-lang.org/fr/) sur votre machine.
 
 ```bash
 # verification de l'installation de rust
@@ -75,7 +75,7 @@ target/release/oxpress --help
 
 #### décompression
 
-<img src="./demo/compress.png" width="100%" />
+<img src="./demo/decompress.png" width="100%" />
 
 #### Testing and verification
 
