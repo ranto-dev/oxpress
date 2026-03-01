@@ -1,12 +1,15 @@
+/**
+ * point d'entree du programme
+ */
 mod compressor;
 mod decompressor;
-mod lz77;
 mod huffman;
-mod ui;
+mod lz77;
 mod stats;
+mod ui;
 
-use clap::{Parser, Subcommand};
 use anyhow::Result;
+use clap::{Parser, Subcommand};
 
 #[derive(Parser)]
 #[command(name = "PYCODEC")]
@@ -18,14 +21,8 @@ struct Cli {
 
 #[derive(Subcommand)]
 enum Commands {
-    Compress {
-        input: String,
-        output: String,
-    },
-    Decompress {
-        input: String,
-        output: String,
-    },
+    Compress { input: String, output: String },
+    Decompress { input: String, output: String },
 }
 
 fn main() -> Result<()> {
@@ -40,7 +37,7 @@ fn main() -> Result<()> {
         Commands::Decompress { input, output } => {
             decompressor::decompress_file(&input, &output)?;
         }
-    }   
+    }
 
     Ok(())
 }

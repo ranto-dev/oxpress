@@ -1,3 +1,6 @@
+/**
+ * UI experience
+ */
 use colored::*;
 use figlet_rs::FIGfont;
 

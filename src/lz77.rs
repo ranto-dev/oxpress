@@ -1,3 +1,6 @@
+/**
+ * algorithme LZ77
+ */
 use serde::{Deserialize, Serialize};
 
 const WINDOW_SIZE: usize = 4096;

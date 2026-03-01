@@ -1,3 +1,6 @@
+/**
+ * algorithme de huffman
+ */
 use serde::{Deserialize, Serialize};
 use std::cmp::Ordering;
 use std::collections::{BinaryHeap, HashMap};

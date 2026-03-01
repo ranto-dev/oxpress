@@ -1,3 +1,6 @@
+/**
+ * decompression controller logique
+ */
 use anyhow::Result;
 use bincode;
 use std::fs;

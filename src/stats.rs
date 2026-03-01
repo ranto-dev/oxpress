@@ -1,3 +1,6 @@
+/**
+ * affichage des statistiques deu compression
+ */
 use colored::Colorize;
 use std::time::Duration;
 

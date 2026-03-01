@@ -1,3 +1,7 @@
+/**
+ * compression controller logique
+ */
+
 use anyhow::{Result, bail};
 use bincode;
 use std::fs;
